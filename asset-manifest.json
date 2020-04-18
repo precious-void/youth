@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.297c3b88.chunk.css",
+    "main.js": "/static/js/main.68a62c0c.chunk.js",
+    "main.js.map": "/static/js/main.68a62c0c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9d39c8ef.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9d39c8ef.js.map",
+    "static/js/2.0c184653.chunk.js": "/static/js/2.0c184653.chunk.js",
+    "static/js/2.0c184653.chunk.js.map": "/static/js/2.0c184653.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8a6b9bf7ca19326da9f5b414dbbfde88.js": "/precache-manifest.8a6b9bf7ca19326da9f5b414dbbfde88.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.297c3b88.chunk.css.map": "/static/css/main.297c3b88.chunk.css.map",
+    "static/js/2.0c184653.chunk.js.LICENSE.txt": "/static/js/2.0c184653.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/RF-Rostin-Regular.fef2b7ee.otf",
+    "static/media/fire.be26b44a.svg": "/static/media/fire.be26b44a.svg",
+    "static/media/logo.068c8270.svg": "/static/media/logo.068c8270.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9d39c8ef.js",
+    "static/js/2.0c184653.chunk.js",
+    "static/css/main.297c3b88.chunk.css",
+    "static/js/main.68a62c0c.chunk.js"
+  ]
+}
