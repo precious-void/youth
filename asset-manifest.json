@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/youth/static/css/main.cef97851.chunk.css",
+    "main.css": "/youth/static/css/main.b3cad2e9.chunk.css",
     "main.js": "/youth/static/js/main.52e074ab.chunk.js",
     "main.js.map": "/youth/static/js/main.52e074ab.chunk.js.map",
     "runtime-main.js": "/youth/static/js/runtime-main.70e58f82.js",
@@ -8,9 +8,9 @@
     "static/js/2.cc07e15e.chunk.js": "/youth/static/js/2.cc07e15e.chunk.js",
     "static/js/2.cc07e15e.chunk.js.map": "/youth/static/js/2.cc07e15e.chunk.js.map",
     "index.html": "/youth/index.html",
-    "precache-manifest.45095ff731a03120f5362e0bf6c10a20.js": "/youth/precache-manifest.45095ff731a03120f5362e0bf6c10a20.js",
+    "precache-manifest.7436ac257343dd1af77059cbd2736d33.js": "/youth/precache-manifest.7436ac257343dd1af77059cbd2736d33.js",
     "service-worker.js": "/youth/service-worker.js",
-    "static/css/main.cef97851.chunk.css.map": "/youth/static/css/main.cef97851.chunk.css.map",
+    "static/css/main.b3cad2e9.chunk.css.map": "/youth/static/css/main.b3cad2e9.chunk.css.map",
     "static/js/2.cc07e15e.chunk.js.LICENSE.txt": "/youth/static/js/2.cc07e15e.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/youth/static/media/RF-Rostin-Regular.fef2b7ee.otf",
     "static/media/fire.be26b44a.svg": "/youth/static/media/fire.be26b44a.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.70e58f82.js",
     "static/js/2.cc07e15e.chunk.js",
-    "static/css/main.cef97851.chunk.css",
+    "static/css/main.b3cad2e9.chunk.css",
     "static/js/main.52e074ab.chunk.js"
   ]
 }
