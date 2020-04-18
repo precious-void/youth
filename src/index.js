@@ -3,8 +3,24 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './styles/index.scss';
+import CacheBuster from './CacheBuster';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+    <CacheBuster>
+        {({ loading, isLatestVersion, refreshCacheAndReload }) => {
+            if (loading) return 'Suka';
+
+            if (!loading && !isLatestVersion) {
+                refreshCacheAndReload();
+                return <h1>Обновляемся</h1>;
+            }
+
+            return <App />;
+        }}
+    </CacheBuster>,
+
+    document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

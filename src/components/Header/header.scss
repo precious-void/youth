@@ -3,30 +3,33 @@
 .header {
     width: 100%;
     display: flex;
-    margin: 2rem 0;
+    margin: 4vh 0;
     font-family: DrukWideCy;
 }
 
 .header__logo {
-    width: 150px;
-    min-width: 150px;
+    width: 11vw;
+    min-width: 11vw;
     display: flex;
     flex-direction: column;
 
     svg {
+        width: 11vw;
+        min-width: 11vw;
+        height: 9.57vw;
         @include themify($themes) {
             fill: themed('mainColor');
         }
     }
 
     & .header__logo__minified {
-        width: 100px;
-        height: 100px;
+        width: 7vw;
+        height: 7vw;
     }
 }
 
 .header__content {
-    padding-left: 4rem;
+    padding-left: 5vw;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -41,7 +44,8 @@
     &.minified {
         .description__title {
             display: inline-block;
-            font-size: 25px;
+            font-size: 2vw;
+            margin-top: 0;
             span {
                 margin-right: 5px;
                 font-family: Epos;
@@ -52,19 +56,23 @@
 
 .description__title {
     margin-top: 5px;
-    font-size: 53px;
+    font-size: 4vw;
 }
 
 .description__hotline {
     font-family: Epos;
-    letter-spacing: 2rem;
+    letter-spacing: 2.5vw;
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .hotline__block {
     display: inline-block;
-    width: 0.6rem;
-    height: 0.6rem;
-    border-radius: 3px;
+    width: 0.6vw;
+    height: 0.6vw;
+    border-radius: 0.2vw;
     @include themify($themes) {
         background: themed('mainColor');
     }
@@ -76,12 +84,15 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    li:last-child {
+        margin: 0;
+    }
 
     li {
-        padding: 7px 10px;
+        padding: 0.5vw 1vw;
         float: left;
-        margin-right: 2rem;
-        font-size: 1.2rem;
+        margin-right: 2.5vw;
+        font-size: 1.5vw;
         border: 1.5px solid transparent;
         transition: 0.3s ease-in-out;
 
