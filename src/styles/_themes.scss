@@ -1,0 +1,43 @@
+$white: #fff;
+$black: #000;
+
+$themes: (
+    light: (
+        mainColor: $white,
+        oppositeColor: $black,
+        navBorder: 1.5px solid $white,
+        backgroundColor: $white,
+        buttonBorder: 2px solid $white
+    ),
+    dark: (
+        mainColor: $black,
+        oppositeColor: $white,
+        navBorder: 1.5px solid $black,
+        backgroundColor: $black,
+        buttonBorder: 2px solid $black
+    )
+);
+
+@mixin themify($themes: $themes) {
+    @each $theme, $map in $themes {
+        .theme-#{$theme} & {
+            $theme-map: () !global;
+            @each $key, $submap in $map {
+                $value: map-get(map-get($themes, $theme), '#{$key}');
+                $theme-map: map-merge(
+                    $theme-map,
+                    (
+                        $key: $value
+                    )
+                ) !global;
+            }
+
+            @content;
+            $theme-map: null !global;
+        }
+    }
+}
+
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}

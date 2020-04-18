@@ -1,0 +1,6 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": false,
+  "prettier.disableLanguages": [],
+  "eslint.alwaysShowStatus": true
+}

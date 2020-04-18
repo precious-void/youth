@@ -1,0 +1,68 @@
+@import 'styles/_themes.scss';
+
+.additional-content-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.additional-content__button-group {
+    button {
+        font-size: 1.2rem;
+        font-family: 'DrukWideCy';
+
+        background: transparent;
+        display: inline-block;
+
+        padding: 10px 10px 5px 10px;
+        text-transform: uppercase;
+        transition: 0.3s ease-in-out;
+        color: inherit;
+
+        @include themify($themes) {
+            border: themed('buttonBorder');
+        }
+
+        margin-right: 1rem;
+
+        &:hover {
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+            @include themify($themes) {
+                color: themed('oppositeColor');
+                background-color: themed('mainColor');
+            }
+        }
+    }
+}
+
+.additional-content__icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+    @include themify($themes) {
+        svg {
+            fill: themed('oppositeColor');
+        }
+        background-color: themed('mainColor');
+    }
+
+    border-radius: 4px;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        @include themify($themes) {
+            svg {
+                fill: themed('mainColor');
+            }
+            background-color: themed('oppositeColor');
+        }
+    }
+}

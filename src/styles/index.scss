@@ -1,0 +1,66 @@
+@import './colors.sass';
+@import './_themes.scss';
+@import './fonts/_fonts.scss';
+
+html,
+body,
+#root {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'DrukWideCy';
+}
+
+p {
+    margin: 0;
+    font-family: 'DrukWideCy';
+}
+
+button {
+    outline: 0;
+    border: 0;
+}
+
+.content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.main-wrapper__column {
+    @include themify($themes) {
+        color: themed('mainColor');
+    }
+
+    width: 70%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+
+    .main-wrapper__content {
+        width: calc(100% - 150px - 4rem);
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-top: 3rem;
+        flex: auto;
+
+        h2 {
+            font-family: 'DrukWideCy';
+            margin: 0.3rem 0;
+        }
+
+        p {
+            font-family: 'RF-Rostin';
+            font-size: 1.2rem;
+        }
+    }
+}
