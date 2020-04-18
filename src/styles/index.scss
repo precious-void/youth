@@ -83,6 +83,13 @@ button {
 }
 
 @media only screen and (max-width: 600px) {
+    html,
+    body,
+    #root {
+        width: 100vw;
+        height: 100%;
+    }
+
     .main-wrapper__content {
         p {
             font-size: 3.1vw !important;
