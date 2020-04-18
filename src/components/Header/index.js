@@ -49,7 +49,7 @@ class Header extends React.Component {
                             <div className="header__content__description">
                                 <p className="description__hotline">
                                     ГОРЯЧАЯ ЛИНИЯ
-                                    <div className="hotline__block" />
+                                    <span className="hotline__block" />
                                 </p>
                                 <p className="description__title">МОЛОДОСТЬ</p>
                             </div>
