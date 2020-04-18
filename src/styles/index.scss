@@ -68,7 +68,9 @@ button {
 
 @media only screen and (max-width: 900px) {
     .main-wrapper__content {
+        justify-content: center;
         width: 100% !important;
+        margin-top: 0 !important;
     }
     .additional-content__button-group button {
         font-size: 2.6vw;

@@ -8,7 +8,7 @@ import CacheBuster from './CacheBuster';
 ReactDOM.render(
     <CacheBuster>
         {({ loading, isLatestVersion, refreshCacheAndReload }) => {
-            if (loading) return 'Suka';
+            if (loading) return null;
 
             if (!loading && !isLatestVersion) {
                 refreshCacheAndReload();
